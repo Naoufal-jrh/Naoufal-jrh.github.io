@@ -1,0 +1,86 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	border: none; /*to eleminate the default browser styling*/
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+		height:100% ;
+		background: linear-gradient(rgba(0, 8, 115, 1),transparent),url(https://images.unsplash.com/photo-1527073620320-77635188c627?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2lsZCUyMGxpZmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60) no-repeat center;
+		display: flex;
+		background-size: cover;
+		justify-content: center;
+		align-items: center;
+	}
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 5px;
+	background: linear-gradient(rgb(114, 134, 211),rgb(142, 167, 233),rgb(114, 134, 211));
+	border-radius: 1em;
+	width: 40%;
+	min-width: 330px;
+	height: fit-content;
+	box-shadow: 8px 4px 20px #0B1452 ;
+}
+
+.content h1{
+	color: white;
+	font-weight: 600;
+	margin-bottom: 1em;
+	margin-top: 0.3em;
+	text-transform: uppercase;
+}
+
+.formElement{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: white; 
+	margin-bottom: 1em;
+}
+.formElement input{
+	padding: 5px;
+	width: 20em;
+	border-radius: 2px;
+	transition: all 0.5s;
+}
+.formElement input:focus{
+	border: solid rgb(114, 134, 211);
+	transform: scale(1.05);
+	margin-top: 2px;
+}
+
+.buttons{
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+}
+
+.buttons input{
+	margin-right: 1em;
+	padding: 0.75em 4em;
+	margin-bottom: 1em;
+	background-color:  #000873;
+	color: white;
+	font-size: 1.1em;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	border-radius: 0.75em;
+	transition: all 1s;
+}
+.buttons input:hover{
+	background-color: white;
+	color: #000873;
+	font-weight: 600;
+	transform: scale(1.1);
+	cursor: pointer;
+}
